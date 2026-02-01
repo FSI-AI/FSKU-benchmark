@@ -32,13 +32,13 @@ FSKU provides two types of questions in both Korean and English:
 ```
 FSKU-benchmark/
 ├── Multiple-Choice Questions
-│   ├── test(kor).csv              # Korean (1,008 questions)
-│   ├── test(eng).csv              # English (1,008 questions)
+│   ├── test(kor).csv              # Korean 
+│   ├── test(eng).csv              # English 
 │   └── answer.csv                 # Answer key (numeric only)
 │
 ├── Subjective Questions
-│   ├── subjective_test(kor).csv   # Korean (108 questions)
-│   └── subjective_test(eng).csv   # English (108 questions)
+│   ├── subjective_test(kor).csv   # Korean 
+│   └── subjective_test(eng).csv   # English 
 │
 ├── Code
 │   ├── baseline.py                # Baseline inference script
@@ -220,10 +220,9 @@ python evaluate.py \
 ============================================================
 FSKU Benchmark Evaluation Report
 ============================================================
-Total Questions: 1008
+Total Questions: 1108
 Correct Answers: 756
-Incorrect Answers: 252
-Accuracy: 75.00% (0.7500)
+Incorrect Answers: 352
 ============================================================
 
 Domain-Level Evaluation Report
@@ -324,14 +323,9 @@ FSKU Subjective Benchmark Evaluation Report
 ======================================================================
 Total Questions: 108
 
-Score Weights: Similarity=60%, Keyword=40%
 ----------------------------------------------------------------------
 Average Similarity Score: 0.7234 (72.34%)
-Average Keyword Score:    0.6852 (68.52%)
-Average Combined Score:   0.7081 (70.81%)
 ----------------------------------------------------------------------
-Total Keywords: 156
-Matched Keywords: 107 (68.59%)
 ======================================================================
 
 Score Distribution:
